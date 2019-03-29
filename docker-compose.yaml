@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mdl:
+    build: .
+    image: mdl
+    container_name: modern-ml
+    volumes:
+      - ./:/host
+    ports:
+      - "8888:8888"
+      - "6006:6006"
